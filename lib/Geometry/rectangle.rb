@@ -1,9 +1,13 @@
-#class Rectangle initializes the length and breadth of the reactangle and defines methods to calculate perimeter and area of the rectangle 
+#class Rectangle initializes the length and breadth and defines methods to calculate perimeter and area 
 class Rectangle
   
-  def initialize(length,breadth)
+  def initialize(length,breadth = nil)
     @length = length
-    @breadth = breadth
+    if breadth != nil
+     @breadth = breadth
+    else
+     @breadth=length 
+    end
   end
   
   def perimeter
