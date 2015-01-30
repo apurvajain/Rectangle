@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe Rectangle do
 
-	let(:rectangle) {Rectangle.new(2,3)}
+	let(:rectangle) {Rectangle.new(2, 3)}
   
   it  "calculates the perimeter of rectangle " do
     expect(rectangle.perimeter).to eq(10)
@@ -13,13 +13,13 @@ describe Rectangle do
   end
   
   it  "calculates the area(float values) of rectangle " do
-    expect(Rectangle.new(2.5,3).area).to eq(7.5)
+    expect(Rectangle.new(2.5, 3).area).to eq(7.5)
   end
  end
   
 describe 'Square' do
   
-  let(:square) {Rectangle.new(2)}
+  let(:square) {Rectangle.createSquare(2)}
   
   it  "calculates the perimeter " do
     expect(square.perimeter).to eq(8)
